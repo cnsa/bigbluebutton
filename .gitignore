@@ -16,3 +16,4 @@ bbb-api-demo/.project
 bigbluebutton-web/.settings*
 bigbluebutton-web/.classpath
 bigbluebutton-web/.project
+.DS_Store
