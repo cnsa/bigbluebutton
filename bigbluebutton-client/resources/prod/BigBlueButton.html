@@ -18,7 +18,7 @@
         overflow: hidden;
       }
     </style>
-    
+
     <script type="text/javascript" src="swfobject/swfobject.js"></script>
     <script type="text/javascript">
       //swfobject.registerObject("BigBlueButton", "11", "expressInstall.swf");
@@ -41,11 +41,14 @@
     <script src="lib/bbblogger.js" language="javascript"></script>
     <script src="lib/bigbluebutton.js" language="javascript"></script>
     <script src="lib/bbb_localization.js" language="javascript"></script>
+    <script type="text/javascript">
+      localeChain = "ru_RU";
+    </script>
     <script src="lib/bbb_blinker.js" language="javascript"></script>
     <script src="lib/bbb_deskshare.js" language="javascript"></script>
     <script src="lib/bbb_api_bridge.js" language="javascript"></script>
-    <script src="lib/sip-0.6.1.js" language="javascript"></script> 
-    <script src="lib/bbb_webrtc_bridge_sip.js" language="javascript"></script> 
+    <script src="lib/sip-0.6.1.js" language="javascript"></script>
+    <script src="lib/bbb_webrtc_bridge_sip.js" language="javascript"></script>
     <script>
       window.chatLinkClicked = function(url) {
         window.open(url, '_blank');
@@ -69,7 +72,7 @@
     <button id="enterFlash" type="button" class="visually-hidden" onclick="startFlashFocus();" value="Click to focus the client"/>
     <div id="notifications" aria-live="polite" role="region" aria-label="Chat Notifications"></div>
   </body>
-  
+
   <script type="text/javascript">
     // Work around pixel alignment bug with Chrome 21 on Mac.
     // See: http://code.google.com/p/bigbluebutton/issues/detail?id=1294

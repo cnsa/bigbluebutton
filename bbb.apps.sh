@@ -16,18 +16,19 @@ APPS=$BBB_DIR/bigbluebutton-apps
 echo "Building apps"
 cd $APPS
 gradle resolveDeps
-gradle clean war deploy
+gradle war deploy
 
 echo "Building voice"
 cd $VOICE
 gradle resolveDeps
-gradle clean war deploy
+gradle war deploy
 
 echo "Building video"
 cd $VIDEO
 gradle resolveDeps
-gradle clean war deploy
+gradle war deploy
 
 cd $BBB_DIR
 
+sudo chmod -R 777 $RED5_DIR/webapps/
 sudo chown -R red5.adm $RED5_DIR
